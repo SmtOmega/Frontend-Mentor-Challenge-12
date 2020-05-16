@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+p {
+    opacity: 0.4;
+}
+header {
+    background-image: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0;
+}
+.container{
+    margin: 80px auto;
+    width: 1200px;
+    max-width: 100%; 
+    text-align: center;
+}
+.btn {
+    padding: 15px 25px;
+    background-color: hsl(171, 66%, 44%);
+    border: none;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.btn:focus {
+    outline: none;
+}
+.btn-mac{
+    background-color: hsl(233, 100%, 69%);
+}
+.container-sm {
+    width: 600px;
+}
+.first-section{
+    margin: 0;
+}
+.flexy {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+.left-flex {
+    width: 30%;
+    text-align: left;
+    margin-left: 80px;
+    margin-right: 40px;
+}
+.left-flex > div {
+    margin-top: 40px;
+}
+.img-div {
+    margin-left: -80px;
+}
+
+.second-section > div, .third-section > div {
+    margin-top: 80px;
+}
+.third-section .flexy > div {
+    padding: 30px;
+}
+.fourth-section .flexy > div{
+    margin-bottom: 40px;
+    padding: 0 40px ;
+}
+
+/* footer section */
+footer {
+    background-color: hsl(206, 30%, 95%);
+}
+footer .flexy {
+    padding-top: 40px;
+}
+footer img {
+    max-width: 70px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+ul li {
+    margin-bottom: 20px;
+}
+footer .flexy > * {
+    margin-left: 60px;
+    text-align: left;
+}
+.social-link {
+    display: flex;
+    margin-left: 80px;
+}
+.social-link li {
+    padding-left: 30px;
+}
+.social-link li a {
+    font-size: 30px;
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px){
+    .container-sm {
+        padding: 0 30px;
+    }
+    .flexy {
+        flex-direction: column;
+    }
+    .left-flex {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0 50px;
+    }
+    footer .container {
+        display: block;
+        margin: 0 auto;
+    }
+    footer .flexy > * {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .social-link {
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+    .img-div {
+        margin-left: 0;
+    }
+}
